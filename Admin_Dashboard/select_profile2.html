@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .box {
+      width: 600px;
+      height: 300px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none; /* Removes underline from links */
+    }
+
+    .box:hover {
+        background-color: #f8e0ee;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .admin {
+      background-color: #ffecf7;
+      color: black;
+    }
+
+    .user {
+      background-color: #ffecf7;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="ban_unban_accounts.php" class="box admin">Ban/Unban Admin Profiles</a>
+    <a href="ban_unban_users.php" class="box user">Ban/Unban User Profiles</a>
+  </div>
+</body>
+</html>
